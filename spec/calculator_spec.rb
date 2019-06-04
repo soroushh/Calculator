@@ -5,8 +5,9 @@ describe Calculator do
 
       first_input_double = double(gets: "2")
       second_input_double = double(gets: "2")
-      
-      expect {subject.calculate(first_input_double, second_input_double)}.to output("first number?\nsecond number?\n4\n").to_stdout
+
+      # expect {subject.calculate(first_input_double, second_input_double)}.to output("first number?\nsecond number?\n4\n").to_stdout
+      expect(subject.calculate(first_input_double, second_input_double)).to eq("4")
     end
   end
 end

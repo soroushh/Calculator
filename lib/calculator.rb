@@ -1,6 +1,6 @@
 class Calculator
   def calculate(first_taker = STDIN, second_taker = STDIN)
-    puts(first_number_taking(first_taker)+ second_number_taking(second_taker))
+    (first_number_taking(first_taker)+ second_number_taking(second_taker)).to_s()
   end
 
   private
